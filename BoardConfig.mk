@@ -175,6 +175,17 @@ TW_NO_REBOOT_BOOTLOADER := true
 TW_CUSTOM_POWER_BUTTON := 116
 #TWRP_EVENT_LOGGING := true
 TARGET_RECOVERY_QCOM_RTC_FIX := true
+TW_INCLUDE_L_CRYPTO := true
+
+# MultiRom
+MR_INPUT_TYPE := type_b
+MR_INIT_DEVICES := device/motorola/titan/multirom/mr_init_devices.c
+MR_DPI := hdpi
+MR_DPI_FONT := 160
+MR_FSTAB := device/motorola/titan/recovery/etc/twrp.fstab
+MR_KEXEC_MEM_MIN := 0x05000000
+MR_KEXEC_DTB := true
+MR_CONTINUOUS_FB_UPDATE := true
 
 # Enable Minikin text layout engine (will be the default soon)
 USE_MINIKIN := true
@@ -191,4 +202,3 @@ include device/qcom/sepolicy/sepolicy.mk
 
 BOARD_SEPOLICY_DIRS += \
         device/lge/g2m/sepolicy
-
