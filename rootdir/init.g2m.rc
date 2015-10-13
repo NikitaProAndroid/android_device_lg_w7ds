@@ -638,9 +638,11 @@ on property:sys.boot_completed=1
     # Vibration (75%)
     write /sys/devices/platform/tspdrv/nforce_timed 95
 
+   # FSync
+   write /sys/kernel/dyn_fsync/Dyn_fsync_active 1
+
     # Power suspend mode (Hybrid)
     write /sys/kernel/power_suspend/power_suspend_mode 3
-
 
     setprop sys.perf.profile 1
 
