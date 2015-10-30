@@ -60,7 +60,7 @@ PRODUCT_COPY_FILES += \
     device/lge/g2m/prebuilt/etc/wifi/WCNSS_qcom_wlan_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv_boot.bin \
     device/lge/g2m/prebuilt/etc/wifi/WCNSS_qcom_wlan_nv.bin:system/etc/wifi/WCNSS_qcom_wlan_nv.bin \
     device/lge/g2m/prebuilt/etc/wifi/WCNSS_qcom_wlan_nv.bin:system/etc/wifi/WCNSS_qcom_wlan_nv_boot.bin \
-    device/lge/g2m/prebuilt/etc/wifi/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini
+    device/lge/g2m/prebuilt/etc/wifi/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini \
     device/lge/g2m/prebuilt/etc/hostapd/hostapd.accept:system/etc/hostapd/hostapd.accept \
     device/lge/g2m/prebuilt/etc/hostapd/hostapd.deny:system/etc/hostapd/hostapd.deny \
     device/lge/g2m/prebuilt/etc/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
@@ -323,13 +323,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
     audio.offload.pcm.enable=false \
     mm.enable.smoothstreaming=true \
     qcom.hw.aac.encoder=true \
-    persist.audio.calfile0=/etc/ACDB/Bluetooth_cal.acdb \
-    persist.audio.calfile1=/etc/ACDB/General_cal.acdb \
-    persist.audio.calfile2=/etc/ACDB/Global_cal.acdb \
-    persist.audio.calfile3=/etc/ACDB/Handset_cal.acdb \
-    persist.audio.calfile4=/etc/ACDB/Hdmi_cal.acdb \
-    persist.audio.calfile5=/etc/ACDB/Headset_cal.acdb \
-    persist.audio.calfile6=/etc/ACDB/Speaker_cal.acdb
+    persist.audio.calfile0=/etc/acdbdata/Bluetooth_cal.acdb \
+    persist.audio.calfile1=/etc/acdbdata/General_cal.acdb \
+    persist.audio.calfile2=/etc/acdbdata/Global_cal.acdb \
+    persist.audio.calfile3=/etc/acdbdata/Handset_cal.acdb \
+    persist.audio.calfile4=/etc/acdbdata/Hdmi_cal.acdb \
+    persist.audio.calfile5=/etc/acdbdata/Headset_cal.acdb \
+    persist.audio.calfile6=/etc/acdbdata/Speaker_cal.acdb
 
 # Radio and Telephony
 PRODUCT_PROPERTY_OVERRIDES += \
