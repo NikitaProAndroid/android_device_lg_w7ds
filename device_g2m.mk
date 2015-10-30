@@ -19,7 +19,7 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Specific overlay
-DEVICE_PACKAGE_OVERLAYS += device/lge/w7/overlay
+DEVICE_PACKAGE_OVERLAYS += device/lge/g2m/overlay
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -48,80 +48,60 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
     frameworks/native/data/etc/android.hardware.nfc.hce.xml:system/etc/permissions/android.hardware.nfc.hce.xml \
     frameworks/native/data/etc/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml \
-    device/lge/w7/prebuilt/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml
+    device/lge/g2m/prebuilt/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml
 
 # Configs
 PRODUCT_COPY_FILES += \
-    device/lge/w7/prebuilt/etc/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
-    device/lge/w7/prebuilt/etc/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
-    kernel/lge/msm8226/drivers/staging/prima/firmware_bin/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
-    kernel/lge/msm8226/drivers/staging/prima/firmware_bin/WCNSS_qcom_cfg.ini:system/etc/firmware/wlan/prima/WCNSS_qcom_cfg.ini \
-    kernel/lge/msm8226/drivers/staging/prima/firmware_bin/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini \
-    device/lge/w7/prebuilt/etc/wifi/WCNSS_qcom_wlan_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin \
-    device/lge/w7/prebuilt/etc/wifi/WCNSS_qcom_wlan_nv.bin:system/etc/wifi/WCNSS_qcom_wlan_nv.bin \
-    device/lge/w7/prebuilt/etc/hostapd/hostapd.accept:system/etc/hostapd/hostapd.accept \
-    device/lge/w7/prebuilt/etc/hostapd/hostapd.deny:system/etc/hostapd/hostapd.deny \
-    device/lge/w7/prebuilt/etc/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
-    device/lge/w7/prebuilt/etc/audio_policy.conf:system/etc/audio_policy.conf \
-    device/lge/w7/prebuilt/etc/audio_effects.conf:system/etc/audio_effects.conf \
-    device/lge/w7/prebuilt/etc/media_codecs.xml:system/etc/media_codecs.xml \
-    device/lge/w7/prebuilt/etc/media_profiles.xml:system/etc/media_profiles.xml \
-    device/lge/w7/prebuilt/etc/mixer_paths.xml:system/etc/mixer_paths.xml \
-    device/lge/w7/prebuilt/etc/thermal-engine-8226.conf:system/etc/thermal-engine-8226.conf \
-    device/lge/w7/prebuilt/usr/idc/touch_dev.idc:system/usr/idc/touch_dev.idc \
-    device/lge/w7/prebuilt/usr/keylayout/gpio-keys_d415.kl:system/usr/keylayout/gpio-keys_d415.kl \
-    device/lge/w7/prebuilt/usr/keylayout/gpio-keys_d410.kl:system/usr/keylayout/gpio-keys_d410.kl \
-    device/lge/w7/prebuilt/etc/init.zetaw.fm.sh:system/etc/init.zetaw.fm.sh \
-    device/lge/w7/prebuilt/etc/init.zetaw.ssr.wifi.sh:system/etc/init.zetaw.ssr.wifi.sh \
-    device/lge/w7/prebuilt/etc/init.zetaw.wifi.sh:system/etc/init.zetaw.wifi.sh \
-    device/lge/w7/prebuilt/etc/init.crda.sh:system/etc/init.crda.sh \
-    device/lge/w7/prebuilt/etc/init.zetaw.post_boot.sh:system/etc/init.zetaw.post_boot.sh \
-    device/lge/w7/prebuilt/etc/sap.conf:system/etc/sap.conf \
-    device/lge/w7/prebuilt/etc/gps.conf:system/etc/gps.conf \
-    device/lge/w7/prebuilt/etc/msap.conf:system/etc/msap.conf \
-    device/lge/w7/prebuilt/etc/clatd.conf:system/etc/clatd.conf \
-    device/lge/w7/prebuilt/etc/sec_config:system/etc/sec_config \
-    device/lge/w7/prebuilt/etc/izat.conf:system/etc/izat.conf \
-    device/lge/w7/prebuilt/etc/boot_fixup:system/etc/boot_fixup \
-    device/lge/w7/prebuilt/etc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
-    device/lge/w7/prebuilt/etc/nfc-nci.conf:system/etc/nfc-nci.conf \
-    device/lge/w7/prebuilt/etc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
-    device/lge/w7/prebuilt/etc/nfcee_access.xml:system/etc/nfcee_access.xml \
-    device/lge/w7/prebuilt/etc/quipc.conf:system/etc/quipc.conf \
-    device/lge/w7/prebuilt/etc/init.d/10nfc_checker:system/etc/init.d/10nfc_checker \
-    device/lge/w7/prebuilt/etc/init.d/11keys_checker:system/etc/init.d/11keys_checker
+    device/lge/g2m/prebuilt/etc/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
+    device/lge/g2m/prebuilt/etc/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
+    device/lge/g2m/prebuilt/etc/wifi/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
+    device/lge/g2m/prebuilt/etc/wifi/WCNSS_qcom_cfg.ini:system/etc/firmware/wlan/prima/WCNSS_qcom_cfg.ini \
+    device/lge/g2m/prebuilt/etc/wifi/WCNSS_qcom_wlan_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin \
+    device/lge/g2m/prebuilt/etc/wifi/WCNSS_qcom_wlan_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv_boot.bin \
+    device/lge/g2m/prebuilt/etc/wifi/WCNSS_qcom_wlan_nv.bin:system/etc/wifi/WCNSS_qcom_wlan_nv.bin \
+    device/lge/g2m/prebuilt/etc/wifi/WCNSS_qcom_wlan_nv.bin:system/etc/wifi/WCNSS_qcom_wlan_nv_boot.bin \
+    device/lge/g2m/prebuilt/etc/wifi/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini
+    device/lge/g2m/prebuilt/etc/hostapd/hostapd.accept:system/etc/hostapd/hostapd.accept \
+    device/lge/g2m/prebuilt/etc/hostapd/hostapd.deny:system/etc/hostapd/hostapd.deny \
+    device/lge/g2m/prebuilt/etc/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
+    device/lge/g2m/prebuilt/etc/audio_policy.conf:system/etc/audio_policy.conf \
+    device/lge/g2m/prebuilt/etc/audio_effects.conf:system/etc/audio_effects.conf \
+    device/lge/g2m/prebuilt/etc/media_codecs.xml:system/etc/media_codecs.xml \
+    device/lge/g2m/prebuilt/etc/media_profiles.xml:system/etc/media_profiles.xml \
+    device/lge/g2m/prebuilt/etc/mixer_paths.xml:system/etc/mixer_paths.xml \
+    device/lge/g2m/prebuilt/etc/thermal-engine-8226.conf:system/etc/thermal-engine-8226.conf \
+    device/lge/g2m/prebuilt/usr/idc/touch_dev.idc:system/usr/idc/touch_dev.idc \
+    device/lge/g2m/prebuilt/usr/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
+    device/lge/g2m/prebuilt/etc/init.zetaw.fm.sh:system/etc/init.zetaw.fm.sh \
+    device/lge/g2m/prebuilt/etc/init.zetaw.ssr.wifi.sh:system/etc/init.zetaw.ssr.wifi.sh \
+    device/lge/g2m/prebuilt/etc/init.zetaw.wifi.sh:system/etc/init.zetaw.wifi.sh \
+    device/lge/g2m/prebuilt/etc/init.crda.sh:system/etc/init.crda.sh \
+    device/lge/g2m/prebuilt/etc/init.zetaw.post_boot.sh:system/etc/init.zetaw.post_boot.sh \
+    device/lge/g2m/prebuilt/etc/sap.conf:system/etc/sap.conf \
+    device/lge/g2m/prebuilt/etc/gps.conf:system/etc/gps.conf \
+    device/lge/g2m/prebuilt/etc/msap.conf:system/etc/msap.conf \
+    device/lge/g2m/prebuilt/etc/clatd.conf:system/etc/clatd.conf \
+    device/lge/g2m/prebuilt/etc/sec_config:system/etc/sec_config \
+    device/lge/g2m/prebuilt/etc/izat.conf:system/etc/izat.conf \
+    device/lge/g2m/prebuilt/etc/boot_fixup:system/etc/boot_fixup \
+    device/lge/g2m/prebuilt/etc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
+    device/lge/g2m/prebuilt/etc/nfc-nci.conf:system/etc/nfc-nci.conf \
+    device/lge/g2m/prebuilt/etc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
+    device/lge/g2m/prebuilt/etc/nfcee_access.xml:system/etc/nfcee_access.xml \
+    device/lge/g2m/prebuilt/etc/quipc.conf:system/etc/quipc.conf \
+    device/lge/g2m/prebuilt/etc/init.d/10nfc_checker:system/etc/init.d/10nfc_checker
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
-    device/lge/w7/rootdir/fstab.w7:root/fstab.w7 \
-    device/lge/w7/rootdir/fstab_f2fs.w7:root/fstab_f2fs.w7 \
-    device/lge/w7/rootdir/init.class_main.sh:root/init.class_main.sh \
-    device/lge/w7/rootdir/init.lge.early.rc:root/init.lge.early.rc \
-    device/lge/w7/rootdir/init.lge.rc:root/init.lge.rc \
-    device/lge/w7/rootdir/init.mdm.sh:root/init.mdm.sh \
-    device/lge/w7/rootdir/init.usb.rc:root/init.usb.rc \
-    device/lge/w7/rootdir/init.w7.rc:root/init.w7.rc \
-    device/lge/w7/rootdir/init.w7.usb.rc:root/init.w7.usb.rc \
-    device/lge/w7/rootdir/init.w7_product.rc:root/init.w7_product.rc \
-    device/lge/w7/rootdir/init.zetaw.bt_vendor.rc:root/init.zetaw.bt_vendor.rc \
-    device/lge/w7/rootdir/init.zetaw.class_core.sh:root/init.zetaw.class_core.sh \
-    device/lge/w7/rootdir/init.zetaw.cmm.usb.sh:root/init.zetaw.cmm.usb.sh \
-    device/lge/w7/rootdir/init.zetaw.early_boot.sh:root/init.zetaw.early_boot.sh \
-    device/lge/w7/rootdir/init.zetaw.factory.sh:root/init.zetaw.factory.sh \
-    device/lge/w7/rootdir/init.zetaw.rc:root/init.zetaw.rc \
-    device/lge/w7/rootdir/init.zetaw.ril.sh:root/init.zetaw.ril.sh \
-    device/lge/w7/rootdir/init.zetaw.sh:root/init.zetaw.sh \
-    device/lge/w7/rootdir/init.zetaw.ssr.sh:root/init.zetaw.ssr.sh \
-    device/lge/w7/rootdir/init.zetaw.syspart_fixup.sh:root/init.zetaw.syspart_fixup.sh \
-    device/lge/w7/rootdir/init.zetaw.usb.rc:root/init.zetaw.usb.rc \
-    device/lge/w7/rootdir/init.zetaw.usb.sh:root/init.zetaw.usb.sh \
-    device/lge/w7/rootdir/ueventd.w7.rc:root/ueventd.w7.rc \
-    device/lge/w7/rootdir/sbin/bbx:root/sbin/bbx \
-    device/lge/w7/rootdir/fscheck.sh:root/fscheck.sh
+    device/lge/g2m/rootdir/fstab.g2m:root/fstab.g2m \
+    device/lge/g2m/rootdir/init.g2m.rc:root/init.g2m.rc \
+    device/lge/g2m/rootdir/init.g2m.usb.rc:root/init.g2m.usb.rc \
+    device/lge/g2m/rootdir/ueventd.g2m.rc:root/ueventd.g2m.rc \
+    device/lge/g2m/rootdir/sbin/healthd:root/sbin/healthd
 
 # TWRP
 PRODUCT_COPY_FILES += \
-    device/lge/w7/rootdir/twrp.fstab:recovery/root/etc/twrp.fstab
+    device/lge/g2m/rootdir/twrp.fstab:recovery/root/etc/twrp.fstab
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -230,7 +210,7 @@ PRODUCT_PACKAGES += \
 
 # EGL config
 PRODUCT_COPY_FILES += \
-    device/lge/w7/prebuilt/egl.cfg:system/lib/egl/egl.cfg
+    device/lge/g2m/prebuilt/egl.cfg:system/lib/egl/egl.cfg
 
 # Opengles version 3
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -365,10 +345,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     NfcNci \
     Tag \
-    nfc_nci.w7 \
+    nfc_nci.g2m \
     com.android.nfc_extras
 
-NFCEE_ACCESS_PATH := device/lge/w7/prebuilt/etc/nfcee_access.xml
+NFCEE_ACCESS_PATH := device/lge/g2m/prebuilt/etc/nfcee_access.xml
 
 # QC time services
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -378,10 +358,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.ksm.default=1
 
-# CmUpdater
-PRODUCT_PROPERTY_OVERRIDES += \
-    cm.updater.uri=http://api.quarx.cm-for.us/api \
-
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
 PRODUCT_LOCALES := en_US
@@ -389,5 +365,5 @@ PRODUCT_LOCALES += hdpi
 PRODUCT_AAPT_CONFIG := normal hdpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi
 
-$(call inherit-product, vendor/lge/w7/w7-vendor.mk)
+$(call inherit-product, vendor/lge/g2m/g2m-vendor.mk)
 

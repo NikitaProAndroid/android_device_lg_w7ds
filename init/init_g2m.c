@@ -66,7 +66,6 @@ int check_cmdline(char param[]) {
     return 0;
 }
 
- 
 void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *board_type)
 {
     char serial[PROP_VALUE_MAX];
@@ -78,55 +77,33 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
     UNUSED(board_type);
 
     property_get("ro.boot.serialno", serial);
-    if (strncmp(serial, "LGD410", 6) == 0) {
-        /* D415, D410n (is this exist!?) */
-        if (check_cmdline("model.name=LG-D410hn") == 1) {
-                property_set("ro.product.device", "w7nds");
-                property_set("ro.product.model", "LG-D410hn");
-                property_set("ro.nfc.port", "I2C");
-        } else {
-                property_set("ro.product.device", "w7ds");
-                property_set("ro.product.model", "LG-D410");
-        }
-        property_set("ro.build.description", "w7ds_global_com-user 4.4.2 KOT49I.A1398228431 1398228431 release-keys");
-        property_set("ro.build.fingerprint", "lge/w7ds_global_com/w7ds:4.4.2/KOT49I.A1398228431/1398228431:user/release-keys");
+    if (strncmp(serial, "LGD618", 6) == 0) {
+        /* D618 */
+        property_set("ro.product.device", "g2mds");
+        property_set("ro.product.model", "LG-D618");
+        property_set("ro.build.description", "g2mds_global_com-user 5.0.2 LRX22G 151391007575d release-keys");
+        property_set("ro.build.fingerprint", "lge/g2mds_global_com/g2mds:5.0.2/LRX22G/151391007575d:user/release-keys");
         property_set("persist.radio.multisim.config", "dsds");
-        property_set("telephony.lteOnCdmaDevice", "0");
-    } else if (strncmp(serial, "LGD405", 6) == 0) {
-        /* D405, D405n */
-        if (check_cmdline("model.name=LG-D405n") == 1) {
-                property_set("ro.product.model", "LG-D405n");
-                property_set("ro.product.device", "w7n");
-                property_set("ro.nfc.port", "I2C");
-        } else {
-                property_set("ro.product.model", "LG-D405");
-                property_set("ro.product.device", "w7");
-        }
-        property_set("ro.build.description", "w7_global_com-user 4.4.2 KOT49I.A1402966338 1402966338 release-keys");
-        property_set("ro.build.fingerprint", "lge/w7_global_com/w7:4.4.2/KOT49I.A1402966338/1402966338:user/release-keys");
+    } else if (strncmp(serial, "LGD610", 6) == 0) {
+        /* D610 */
+	property_set("ro.product.model", "LG-D610");
+	property_set("ro.product.device", "g2mss");
+        property_set("ro.build.description", "g2mss_global_com-user 5.0.2 LRX22G 151391007575d release-keys");
+        property_set("ro.build.fingerprint", "lge/g2mss_global_com/g2mds:5.0.2/LRX22G/151391007575d:user/release-keys");
         property_set("persist.radio.multisim.config", "");
-        property_set("telephony.lteOnCdmaDevice", "0");
-    } else if (strncmp(serial, "LGD415", 6) == 0) {
-        /* D415, D415n (is this exist!?) */
-        if (check_cmdline("model.name=LG-D415n") == 1) {
-                property_set("ro.product.device", "w7nds");
-                property_set("ro.product.model", "LG-D415n");
-                property_set("persist.radio.multisim.config", "dsds");
-        } else {
-                property_set("ro.product.device", "w7");
-                property_set("ro.product.model", "LG-D415");
-                property_set("persist.radio.multisim.config", "");
-        }
-        property_set("ro.nfc.port", "I2C");
-        property_set("ro.build.description", "w7_tmo_us-user 4.4.2 KOT49I.D41510c D41510c.1393916607 release-keys");
-        property_set("ro.build.fingerprint", "lge/w7_tmo_us/w7:4.4.2/KOT49I.D41510c/D41510c.1393916607:user/release-keys");
-        property_set("telephony.lteOnCdmaDevice", "0");
+   } else if (strncmp(serial, "LGD620", 6) == 0) {
+        /* D620 */
+	property_set("ro.product.model", "LG-D620");
+	property_set("ro.product.device", "g2m");
+	property_set("ro.nfc.port", "I2C");
+        property_set("ro.build.description", "g2m_global_com-user 5.0.2 LRX22G 151391007575d release-keys");
+        property_set("ro.build.fingerprint", "lge/g2m_global_com/g2mds:5.0.2/LRX22G/151391007575d:user/release-keys");
+        property_set("persist.radio.multisim.config", "");
     } else {
         /* XXX */
-        property_set("ro.product.device", "w7");
-        property_set("ro.product.model", "Please write your model name to agent00791@gmail.com");
+        property_set("ro.product.device", "g2m");
+        property_set("ro.product.model", "Please write your model name to nikich340@gmail.com");
         property_set("persist.radio.multisim.config", "");
-        property_set("telephony.lteOnCdmaDevice", "0");
     }
     property_get("ro.product.device", device);
     strlcpy(devicename, device, sizeof(devicename));

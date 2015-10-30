@@ -1,5 +1,5 @@
 #
-# system.prop for w7
+# system.prop for g2m
 #
 ############################################################ CLEANUP ME PLEASE QUARX ###########################################################
 
@@ -22,7 +22,7 @@ persist.radio.msgtunnel.start=false
 #
 # System props for telephony
 # System prop to turn on CdmaLTEPhone always
-# LGE_CHANGE_S by.mun@lge.com 2013-08-14 turn off CdmaLTEPhone for W7
+# LGE_CHANGE_S by.mun@lge.com 2013-08-14 turn off CdmaLTEPhone for g2m
 telephony.lteOnCdmaDevice=0
 ro.telephony.default_network=0
 
@@ -86,3 +86,4 @@ ro.config.vc_call_vol_steps=6
 persist.data.sbp.update=0
 persist.radio.rat_on=legacy
 ro.lge.proximity.delay=25
+qemu.hw.mainkeys=0
