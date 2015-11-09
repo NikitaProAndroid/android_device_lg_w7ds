@@ -24,11 +24,6 @@
 USE_CAMERA_STUB := false
 TARGET_NO_BOOTLOADER := true
 
-# ODEX
-WITH_DEXPREOPT := true
-WITH_DEXPREOPT_COMP := true
-DONT_DEXPREOPT_PREBUILTS := true
-
 TARGET_SPECIFIC_HEADER_PATH += device/lge/g2m/include
 
 # Releasetools
