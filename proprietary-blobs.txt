@@ -93,7 +93,7 @@ vendor/lib/libcneapiclient.so
 vendor/lib/libperipheral_client.so
 vendor/lib/libsystem_health_mon.so
 vendor/lib/libxml.so
-lib/libmdmdetect.so
+vendor/lib/libmdmdetect.so
 bin/qmuxd
 bin/rmt_storage
 bin/netmgrd

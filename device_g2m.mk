@@ -303,13 +303,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
     mm.enable.smoothstreaming=true
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.audio.calfile0=/etc/Bluetooth_cal.acdb \
-    persist.audio.calfile1=/etc/General_cal.acdb \
-    persist.audio.calfile2=/etc/Global_cal.acdb \
-    persist.audio.calfile3=/etc/Handset_cal.acdb \
-    persist.audio.calfile4=/etc/Hdmi_cal.acdb \
-    persist.audio.calfile5=/etc/Headset_cal.acdb \
-    persist.audio.calfile6=/etc/Speaker_cal.acdb
+    persist.audio.calfile0=/etc/acdbdata/Bluetooth_cal.acdb \
+    persist.audio.calfile1=/etc/acdbdata/General_cal.acdb \
+    persist.audio.calfile2=/etc/acdbdata/Global_cal.acdb \
+    persist.audio.calfile3=/etc/acdbdata/Handset_cal.acdb \
+    persist.audio.calfile4=/etc/acdbdata/Hdmi_cal.acdb \
+    persist.audio.calfile5=/etc/acdbdata/Headset_cal.acdb \
+    persist.audio.calfile6=/etc/acdbdata/Speaker_cal.acdb
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.audio.fluence.voicecall=true \
