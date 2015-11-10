@@ -23,6 +23,7 @@
 
 USE_CAMERA_STUB := false
 TARGET_NO_BOOTLOADER := true
+USE_HOST_LEX := yes
 
 TARGET_SPECIFIC_HEADER_PATH += device/lge/g2m/include
 
