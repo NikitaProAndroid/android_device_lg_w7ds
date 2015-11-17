@@ -87,16 +87,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/lge/g2m/rootdir/fstab.g2m:root/fstab.g2m \
     device/lge/g2m/rootdir/init.g2m.rc:root/init.g2m.rc \
+    device/lge/g2m/rootdir/init.baseband.sh:root/init.baseband.sh \
     device/lge/g2m/rootdir/init.g2m.usb.rc:root/init.g2m.usb.rc \
     device/lge/g2m/rootdir/ueventd.g2m.rc:root/ueventd.g2m.rc
 
 # OTA
 PRODUCT_COPY_FILES += \
     device/lge/g2m/prebuilt/fixup.sh:fixup.sh
-
-# Delete 4G option for non-LTE models by script below
-PRODUCT_COPY_FILES += \
-    device/lge/g2m/prebuilt/nonLTE/TeleService/TeleService.apk:system/nonLTE/TeleService/TeleService.apk
 
 # TWRP
 PRODUCT_COPY_FILES += \
