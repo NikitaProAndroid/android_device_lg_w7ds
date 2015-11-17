@@ -671,7 +671,7 @@
         <ctl name="SLIM RX1 MUX" value="AIF1_PB" />
         <ctl name="SLIM_0_RX Channels" value="One" />
         <ctl name="RX3 MIX1 INP1" value="RX1" />
-        <ctl name="RX3 Digital Volume" value="63" />
+        <ctl name="RX3 Digital Volume" value="65" />
         <ctl name="SPK DRV Volume" value="7" />
         <ctl name="SPK DAC Switch" value="1" />
     </path>
@@ -744,7 +744,7 @@
         <ctl name="SLIM_0_RX Channels" value="One" />
         <ctl name="RX1 MIX1 INP1" value="RX1" />
         <ctl name="CLASS_H_DSM MUX" value="RX_HPHL" />
-        <ctl name="RX1 Digital Volume" value="60" />
+        <ctl name="RX1 Digital Volume" value="66" />
         <ctl name="RDAC3 MUX" value="DEM2" />
         <ctl name="EAR PA Gain" value="POS_6_DB" />
         <ctl name="DAC1 Switch" value="1" />
@@ -782,8 +782,8 @@
         <ctl name="HPHL DAC Switch" value="1" />
         <ctl name="HPHL Volume" value="15" />
         <ctl name="HPHR Volume" value="15" />
-        <ctl name="RX1 Digital Volume" value="58" />
-        <ctl name="RX2 Digital Volume" value="58" />
+        <ctl name="RX1 Digital Volume" value="70" />
+        <ctl name="RX2 Digital Volume" value="70" />
     </path>
 
     <path name="headphones">
@@ -810,7 +810,7 @@
 
     <path name="voice-speaker">
         <path name="speaker" />
-        <ctl name="RX3 Digital Volume" value="60" />
+        <ctl name="RX3 Digital Volume" value="70" />
         <ctl name="SPK DRV Volume" value="8" />
     </path>
 
@@ -822,8 +822,8 @@
 
     <path name="voice-headphones">
         <path name="headphones" />
-        <ctl name="HPHL Volume" value="20" />
-        <ctl name="HPHR Volume" value="20" />
+        <ctl name="HPHL Volume" value="23" />
+        <ctl name="HPHR Volume" value="23" />
         <ctl name="RX1 Digital Volume" value="60" />
         <ctl name="RX2 Digital Volume" value="60" />
     </path>
