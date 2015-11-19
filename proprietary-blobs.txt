@@ -312,8 +312,8 @@ vendor/lib/libsensor_lge_cal.so
 bin/mpdecision
 
 # Other
-vendor/lib/libQSEEComAPI.so
--bin/irsc_util
+lib/libwebviewchromium_loader.so
+lib/libwebviewchromium_plat_support.so
 bin/mm-pp-daemon
 vendor/lib/libdisp-aba.so
 vendor/lib/libmm-abl-oem.so

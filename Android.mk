@@ -23,7 +23,7 @@ include $(CLEAR_VARS)
 
 # Symlink chromium library
 $(shell mkdir -p $(TARGET_OUT)/app/webview/lib/arm; \
-	ln -sf /system/lib/libwebviewchromium.so \
+	ln -s /system/lib/libwebviewchromium.so \
 		$(TARGET_OUT)/app/webview/lib/arm/libwebviewchromium.so)
 
 endif
