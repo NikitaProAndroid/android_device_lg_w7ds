@@ -9,3 +9,6 @@ if [ "$model" = "LG-D618" ] || [ "$model" = "LG-D610" ]; then
 	rm -rf /system/app/NfcNci
 fi
 
+# create symlink for webview library
+mkdir -p system/app/webview/lib/arm
+ln -sf /system/lib/libwebviewchromium.so system/app/webview/lib/arm/libwebviewchromium.so
