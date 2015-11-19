@@ -56,7 +56,7 @@ vendor/lib/libacdbrtac.so
 vendor/lib/libaudcal.so
 vendor/lib/libaudioalsa.so
 -vendor/lib/libacdbmapper.so
--vendor/lib/libacdbloader.so
+vendor/lib/libacdbloader.so
 vendor/lib/soundfx/libqcbassboost.so
 vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcvirt.so
@@ -315,6 +315,7 @@ bin/mpdecision
 vendor/lib/libQSEEComAPI.so
 -bin/irsc_util
 bin/mm-pp-daemon
+vendor/lib/libdisp-aba.so
 vendor/lib/libmm-abl-oem.so
 vendor/lib/libmm-abl.so
 -bin/ptt_socket_app
