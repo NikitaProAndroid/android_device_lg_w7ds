@@ -64,6 +64,7 @@ PRODUCT_COPY_FILES += \
     device/lge/g2m/prebuilt/usr/keylayout/Generic-D4x5.kl:system/usr/keylayout/Generic-D4x5.kl \
     device/lge/g2m/prebuilt/usr/keylayout/Generic-D410.kl:system/usr/keylayout/Generic-D410.kl \
     device/lge/g2m/prebuilt/etc/init.zetaw.bt.sh:system/etc/init.zetaw.bt.sh \
+    device/lge/g2m/prebuilt/etc/init.qcom.fm.sh:system/etc/init.qcom.fm.sh \
     device/lge/g2m/prebuilt/etc/sec_config:system/etc/sec_config \
     device/lge/g2m/prebuilt/etc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
     device/lge/g2m/prebuilt/etc/nfc-nci.conf:system/etc/nfc-nci.conf \
@@ -167,10 +168,8 @@ PRODUCT_PACKAGES += charger charger_res_images
 
 # FM radio
 PRODUCT_PACKAGES += \
-    qcom.fmradio \
-    libqcomfm_jni \
-    FM2 \
-    FMRecord
+    FMRadio \
+    libfmjni
 
 # GPS
 PRODUCT_PACKAGES += \
