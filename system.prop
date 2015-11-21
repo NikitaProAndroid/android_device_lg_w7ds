@@ -1,5 +1,5 @@
 #
-# system.prop for w7
+# system.prop for g2m
 #
 # Use reference RIL for initial bringup
 rild.libpath=/vendor/lib/libril-qc-qmi-1.so

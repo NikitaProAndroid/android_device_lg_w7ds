@@ -20,21 +20,21 @@
 # included in a build is to use PRODUCT_PACKAGES in a product
 # definition file).
 #
-TARGET_SPECIFIC_HEADER_PATH += device/lge/w7/include
+TARGET_SPECIFIC_HEADER_PATH += device/lge/g2m/include
 
 # Vendor Init
 TARGET_UNIFIED_DEVICE := true
 TARGET_INIT_VENDOR_LIB := libinit_msm
-TARGET_LIBINIT_DEFINES_FILE := device/lge/w7/init/init_w7.cpp
-TARGET_OTA_ASSERT_DEVICE := w7,w7ds,w7n
-TARGET_INCREMENTAL_OTA_VERBATIM_FILES := /system/priv-app/OneTimeInitializer/OneTimeInitializer.apk /system/app/Provision/Provision.apk
-TARGET_RELEASETOOLS_EXTENSIONS := device/lge/w7
+TARGET_LIBINIT_DEFINES_FILE := device/lge/g2m/init/init_g2m.cpp
+TARGET_OTA_ASSERT_DEVICE := g2m,g2mds,g2mss
+#TARGET_INCREMENTAL_OTA_VERBATIM_FILES := /system/priv-app/OneTimeInitializer/OneTimeInitializer.apk /system/app/Provision/Provision.apk
+TARGET_RELEASETOOLS_EXTENSIONS := device/lge/g2m
 
 # Keymaster
 TARGET_KEYMASTER_WAIT_FOR_QSEE := true
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := w7
+TARGET_BOOTLOADER_BOARD_NAME := g2m
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
 
@@ -55,10 +55,10 @@ USE_CLANG_PLATFORM_BUILD := true
 
 # Kernel image
 BOARD_KERNEL_SEPARATED_DT := true
-BOARD_CUSTOM_BOOTIMG_MK := device/lge/w7/mkbootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK := device/lge/g2m/mkbootimg.mk
 TARGET_KERNEL_SOURCE := kernel/lge/msm8226
-TARGET_KERNEL_CONFIG := w7ds_cyanogenmod_defconfig
-BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 user_debug=31 msm_rtb.filter=0x37 androidboot.hardware=w7 androidboot.selinux=permissive
+TARGET_KERNEL_CONFIG := g2mini_cm_defconfig
+BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 user_debug=31 msm_rtb.filter=0x37 androidboot.hardware=g2m androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
@@ -77,7 +77,7 @@ COMMON_GLOBAL_CFLAGS += \
     -DBOARD_CHARGING_CMDLINE_VALUE='"chargerlogo"'
 
 # Charger
-BOARD_HEALTHD_CUSTOM_CHARGER_RES := device/lge/w7/charger/images
+BOARD_HEALTHD_CUSTOM_CHARGER_RES := device/lge/g2m/charger/images
 
 # Global flags
 COMMON_GLOBAL_CFLAGS += -DLG_CAMERA_HARDWARE
@@ -121,7 +121,7 @@ MAX_EGL_CACHE_KEY_SIZE := 12*1024
 MAX_EGL_CACHE_SIZE := 2048*1024
 
 # Hardware tunables framework
-BOARD_HARDWARE_CLASS := device/lge/w7/cmhw/
+BOARD_HARDWARE_CLASS := device/lge/g2m/cmhw/
 
 # GPS
 USE_DEVICE_SPECIFIC_LOC_API := true
@@ -129,7 +129,7 @@ USE_DEVICE_SPECIFIC_GPS := true
 TARGET_NO_RPC := true
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/w7/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/g2m/bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_QCOM := true
 BLUETOOTH_HCI_USE_MCT := true
@@ -176,7 +176,7 @@ BOARD_USES_QC_TIME_SERVICES := true
 
 # Recovery
 BOARD_HAS_NO_SELECT_BUTTON := true
-TARGET_RECOVERY_FSTAB := device/lge/w7/rootdir/fstab.w7
+TARGET_RECOVERY_FSTAB := device/lge/g2m/rootdir/fstab.g2m
 RECOVERY_FSTAB_VERSION := 2
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 DEVICE_RESOLUTION := 540x960
@@ -208,5 +208,5 @@ TARGET_HW_DISK_ENCRYPTION := true
 include device/qcom/sepolicy/sepolicy.mk
 
 BOARD_SEPOLICY_DIRS += \
-        device/lge/w7/sepolicy
+        device/lge/g2m/sepolicy
 

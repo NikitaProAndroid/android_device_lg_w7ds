@@ -25,7 +25,7 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
  
-import init.w7.usb.rc
+import init.g2m.usb.rc
 
 on early-init
     export LD_PRELOAD "/system/lib/libboringssl-compat.so"
@@ -182,10 +182,10 @@ on fs
     mkdir /dev/bus/usb 0755 root root
 
     # mount fs
-    mount_all fstab.w7
+    mount_all fstab.g2m
 
     # activate zram
-    swapon_all fstab.w7
+    swapon_all fstab.g2m
     write /proc/sys/vm/page-cluster 0
 
     # Keeping following partitions outside fstab file. As user may not have

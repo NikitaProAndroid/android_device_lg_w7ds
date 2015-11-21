@@ -19,7 +19,7 @@ $(call inherit-product, frameworks/native/build/phone-hdpi-512-dalvik-heap.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Specific overlay
-DEVICE_PACKAGE_OVERLAYS += device/lge/w7/overlay
+DEVICE_PACKAGE_OVERLAYS += device/lge/g2m/overlay
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -54,51 +54,51 @@ PRODUCT_COPY_FILES += \
 
 # Configs
 PRODUCT_COPY_FILES += \
-    device/lge/w7/prebuilt/etc/audio_policy.conf:system/etc/audio_policy.conf \
-    device/lge/w7/prebuilt/etc/audio_effects.conf:system/etc/audio_effects.conf \
-    device/lge/w7/prebuilt/etc/media_codecs.xml:system/etc/media_codecs.xml \
-    device/lge/w7/prebuilt/etc/media_profiles.xml:system/etc/media_profiles.xml \
-    device/lge/w7/prebuilt/etc/mixer_paths.xml:system/etc/mixer_paths.xml \
-    device/lge/w7/prebuilt/etc/thermal-engine-8226.conf:system/etc/thermal-engine-8226.conf \
-    device/lge/w7/prebuilt/usr/idc/touch_dev.idc:system/usr/idc/touch_dev.idc \
-    device/lge/w7/prebuilt/usr/keylayout/Generic-D4x5.kl:system/usr/keylayout/Generic-D4x5.kl \
-    device/lge/w7/prebuilt/usr/keylayout/Generic-D410.kl:system/usr/keylayout/Generic-D410.kl \
-    device/lge/w7/prebuilt/etc/init.zetaw.bt.sh:system/etc/init.zetaw.bt.sh \
-    device/lge/w7/prebuilt/etc/sec_config:system/etc/sec_config \
-    device/lge/w7/prebuilt/etc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
-    device/lge/w7/prebuilt/etc/nfc-nci.conf:system/etc/nfc-nci.conf \
-    device/lge/w7/prebuilt/etc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
-    device/lge/w7/prebuilt/etc/nfcee_access.xml:system/etc/nfcee_access.xml \
-    device/lge/w7/wifi/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
-    device/lge/w7/wifi/WCNSS_qcom_cfg.ini:system/etc/firmware/wlan/prima/WCNSS_qcom_cfg.ini \
-    device/lge/w7/wifi/WCNSS_qcom_wlan_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin \
-    device/lge/w7/wifi/WCNSS_qcom_wlan_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv_boot.bin \
-    device/lge/w7/wifi/WCNSS_qcom_wlan_nv.bin:system/etc/wifi/WCNSS_qcom_wlan_nv.bin \
-    device/lge/w7/wifi/WCNSS_qcom_wlan_nv.bin:system/etc/wifi/WCNSS_qcom_wlan_nv_boot.bin \
-    device/lge/w7/wifi/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini
+    device/lge/g2m/prebuilt/etc/audio_policy.conf:system/etc/audio_policy.conf \
+    device/lge/g2m/prebuilt/etc/audio_effects.conf:system/etc/audio_effects.conf \
+    device/lge/g2m/prebuilt/etc/media_codecs.xml:system/etc/media_codecs.xml \
+    device/lge/g2m/prebuilt/etc/media_profiles.xml:system/etc/media_profiles.xml \
+    device/lge/g2m/prebuilt/etc/mixer_paths.xml:system/etc/mixer_paths.xml \
+    device/lge/g2m/prebuilt/etc/thermal-engine-8226.conf:system/etc/thermal-engine-8226.conf \
+    device/lge/g2m/prebuilt/usr/idc/touch_dev.idc:system/usr/idc/touch_dev.idc \
+    device/lge/g2m/prebuilt/usr/keylayout/Generic-D4x5.kl:system/usr/keylayout/Generic-D4x5.kl \
+    device/lge/g2m/prebuilt/usr/keylayout/Generic-D410.kl:system/usr/keylayout/Generic-D410.kl \
+    device/lge/g2m/prebuilt/etc/init.zetaw.bt.sh:system/etc/init.zetaw.bt.sh \
+    device/lge/g2m/prebuilt/etc/sec_config:system/etc/sec_config \
+    device/lge/g2m/prebuilt/etc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
+    device/lge/g2m/prebuilt/etc/nfc-nci.conf:system/etc/nfc-nci.conf \
+    device/lge/g2m/prebuilt/etc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
+    device/lge/g2m/prebuilt/etc/nfcee_access.xml:system/etc/nfcee_access.xml \
+    device/lge/g2m/wifi/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
+    device/lge/g2m/wifi/WCNSS_qcom_cfg.ini:system/etc/firmware/wlan/prima/WCNSS_qcom_cfg.ini \
+    device/lge/g2m/wifi/WCNSS_qcom_wlan_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin \
+    device/lge/g2m/wifi/WCNSS_qcom_wlan_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv_boot.bin \
+    device/lge/g2m/wifi/WCNSS_qcom_wlan_nv.bin:system/etc/wifi/WCNSS_qcom_wlan_nv.bin \
+    device/lge/g2m/wifi/WCNSS_qcom_wlan_nv.bin:system/etc/wifi/WCNSS_qcom_wlan_nv_boot.bin \
+    device/lge/g2m/wifi/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
-    device/lge/w7/rootdir/fstab.w7:root/fstab.w7 \
-    device/lge/w7/rootdir/init.w7.rc:root/init.w7.rc \
-    device/lge/w7/rootdir/init.w7.rc:root/init.w7.rc \
-    device/lge/w7/rootdir/init.w7.usb.rc:root/init.w7.usb.rc \
-    device/lge/w7/rootdir/ueventd.w7.rc:root/ueventd.w7.rc \
-    device/lge/w7/rootdir/init.baseband.sh:root/init.baseband.sh \
-    device/lge/w7/rootdir/init.qcom.ril.sh:system/etc/init.qcom.ril.sh
+    device/lge/g2m/rootdir/fstab.g2m:root/fstab.g2m \
+    device/lge/g2m/rootdir/init.g2m.rc:root/init.g2m.rc \
+    device/lge/g2m/rootdir/init.g2m.rc:root/init.g2m.rc \
+    device/lge/g2m/rootdir/init.g2m.usb.rc:root/init.g2m.usb.rc \
+    device/lge/g2m/rootdir/ueventd.g2m.rc:root/ueventd.g2m.rc \
+    device/lge/g2m/rootdir/init.baseband.sh:root/init.baseband.sh \
+    device/lge/g2m/rootdir/init.qcom.ril.sh:system/etc/init.qcom.ril.sh
 
 # OTA
 PRODUCT_COPY_FILES += \
-    device/lge/w7/prebuilt/fixup.sh:fixup.sh
+    device/lge/g2m/prebuilt/fixup.sh:fixup.sh
 
 # TWRP
 PRODUCT_COPY_FILES += \
-    device/lge/w7/rootdir/twrp.fstab:recovery/root/etc/twrp.fstab
+    device/lge/g2m/rootdir/twrp.fstab:recovery/root/etc/twrp.fstab
 
 # Offmode Charging
 PRODUCT_PACKAGES += \
-    charger_res_w7 \
-    charger_w7
+    charger_res_g2m \
+    charger_g2m
 
 # Data
 PRODUCT_PACKAGES += \
@@ -246,7 +246,7 @@ PRODUCT_PACKAGES += \
     nfc_nci.pn54x.default \
     com.android.nfc_extras
 
-NFCEE_ACCESS_PATH := device/lge/w7/prebuilt/etc/nfcee_access.xml
+NFCEE_ACCESS_PATH := device/lge/g2m/prebuilt/etc/nfcee_access.xml
 
 # Sony timekeep
 PRODUCT_PACKAGES += \
@@ -308,13 +308,9 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.ksm.default=1
 
-# CmUpdater
-PRODUCT_PROPERTY_OVERRIDES += \
-    cm.updater.uri=http://api.quarx.cm-for.us/api
-
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := hdpi
 
-$(call inherit-product, vendor/lge/w7/w7-vendor.mk)
+$(call inherit-product, vendor/lge/g2m/g2m-vendor.mk)
 

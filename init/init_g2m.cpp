@@ -72,46 +72,36 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
     char devicename[PROP_VALUE_MAX];
 
     property_get("ro.boot.serialno", serial);
-    if (strncmp(serial, "LGD410", 6) == 0) {
-        /* D410, D410hn */
-        if (check_cmdline("model.name=LG-D410hn") == 1) {
-                property_set("ro.product.device", "w7nds");
-                property_set("ro.product.model", "LG-D410hn");
-                property_set("ro.nfc.port", "I2C");
-        } else {
-                property_set("ro.product.device", "w7ds");
-                property_set("ro.product.model", "LG-D410");
-        }
-        property_set("ro.build.description", "w7ds_global_com-user 5.0.2 LRX22G.A1423481010 15040202274a7 release-keys");
-        property_set("ro.build.fingerprint", "lge/w7ds_global_com/w7ds:5.0.2/LRX22G.A1423481010/15040202274a7:user/release-keys");
+    if (strncmp(serial, "LGD618", 6) == 0) {
+        /* D618 */
+        property_set("ro.product.device", "g2mds");
+        property_set("ro.product.model", "LG-D618");
+        property_set("ro.build.description", "g2mds_global_com-user 5.1.1 LMY48Y 151391007575d release-keys");
+        property_set("ro.build.fingerprint", "lge/g2mds_global_com/g2mds:5.1.1/LMY48Y/151391007575d:user/release-keys");
+	property_set("persist.radio.multisim.config", "dsds");
         property_set("persist.multisim.config", "dsds");
-        property_set("persist.radio.multisim.config", "dsds");
-    } else if (strncmp(serial, "LGD405", 6) == 0) {
-        /* D405, D405n */
-        if (check_cmdline("model.name=LG-D405n") == 1) {
-                property_set("ro.product.model", "LG-D405n");
-                property_set("ro.product.device", "w7n");
-                property_set("ro.nfc.port", "I2C");
-        } else {
-                property_set("ro.product.model", "LG-D405");
-                property_set("ro.product.device", "w7");
-        }
-        property_set("ro.build.description", "w7_global_com-user 5.0.2 LRX22G.A1423481010 15040202274a7 release-keys");
-        property_set("ro.build.fingerprint", "lge/w7_global_com/w7ds:5.0.2/LRX22G.A1423481010/15040202274a7:user/release-keys");
+    } else if (strncmp(serial, "LGD610", 6) == 0) {
+         /* D610 */
+	property_set("ro.product.model", "LG-D610");
+	property_set("ro.product.device", "g2mss");
+        property_set("ro.build.description", "g2mss_global_com-user 5.1.1 LMY48Y 151391007575d release-keys");
+        property_set("ro.build.fingerprint", "lge/g2mss_global_com/g2mss:5.1.1/LMY48Y/151391007575d:user/release-keys");
         property_set("persist.radio.multisim.config", "");
         property_set("persist.multisim.config", "");
-    } else if (strncmp(serial, "LGD415", 6) == 0) {
-        /* D415 */
-        property_set("ro.product.model", "LG-D415");
-        property_set("ro.product.device", "w7");
-        property_set("ro.build.description", "w7_global_com-user 5.0.2 LRX22G.A1423481010 15040202274a7 release-keys");
-        property_set("ro.build.fingerprint", "lge/w7_global_com/w7ds:5.0.2/LRX22G.A1423481010/15040202274a7:user/release-keys");
+    } else if (strncmp(serial, "LGD620", 6) == 0) {
+        /* D620 */
+	property_set("ro.product.model", "LG-D620");
+	property_set("ro.product.device", "g2m");
+	property_set("ro.nfc.port", "I2C");
+        property_set("ro.build.description", "g2m_global_com-user 5.1.1 LMY48Y 151391007575d release-keys");
+        property_set("ro.build.fingerprint", "lge/g2m_global_com/g2m:5.1.1/LMY48Y/151391007575d:user/release-keys");
         property_set("persist.radio.multisim.config", "");
         property_set("persist.multisim.config", "");
     } else {
         /* XXX */
-        property_set("ro.product.device", "w7");
-        property_set("ro.product.model", "Please write your model name to agent00791@gmail.com");
+        /* XXX */
+        property_set("ro.product.device", "g2m");
+        property_set("ro.product.model", "Please write your model name to nikich340@gmail.com");
         property_set("persist.radio.multisim.config", "");
         property_set("persist.multisim.config", "");
     }
