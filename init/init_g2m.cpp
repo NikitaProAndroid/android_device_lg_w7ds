@@ -80,6 +80,7 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.build.fingerprint", "lge/g2mds_global_com/g2mds:5.1.1/LMY48Y/151391007575d:user/release-keys");
 	property_set("persist.radio.multisim.config", "dsds");
         property_set("persist.multisim.config", "dsds");
+	property_set("persist.radio.dont_use_dsd", "true");
     } else if (strncmp(serial, "LGD610", 6) == 0) {
          /* D610 */
 	property_set("ro.product.model", "LG-D610");
