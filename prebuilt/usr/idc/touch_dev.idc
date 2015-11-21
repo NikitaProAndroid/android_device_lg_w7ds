@@ -25,6 +25,7 @@ touch.orientationAware = 1
 # Gesture Mode Parameters
 touch.gestureMode = spots
 
+
 # Size
 touch.size.calibration = geometric
 touch.size.scale = 1
@@ -44,3 +45,5 @@ touch.orientation.calibration = none
 
 touch.distance.calibration = none
 touch.distance.scale = 1
+
+keyboard.layout = gpio-keys
