@@ -245,11 +245,6 @@ PRODUCT_PACKAGES += \
 
 NFCEE_ACCESS_PATH := device/lge/g2m/prebuilt/etc/nfcee_access.xml
 
-# Sony timekeep
-PRODUCT_PACKAGES += \
-    timekeep \
-    TimeKeep
-
 # IO Scheduler
 PRODUCT_PROPERTY_OVERRIDES += \
     sys.io.scheduler=bfq
