@@ -81,7 +81,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/lge/g2m/rootdir/fstab.g2m:root/fstab.g2m \
     device/lge/g2m/rootdir/init.g2m.rc:root/init.g2m.rc \
-    device/lge/g2m/rootdir/init.g2m.rc:root/init.g2m.rc \
     device/lge/g2m/rootdir/init.g2m.usb.rc:root/init.g2m.usb.rc \
     device/lge/g2m/rootdir/ueventd.g2m.rc:root/ueventd.g2m.rc \
     device/lge/g2m/rootdir/init.baseband.sh:root/init.baseband.sh \
