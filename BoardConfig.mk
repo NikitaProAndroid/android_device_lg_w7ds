@@ -56,7 +56,7 @@ USE_CLANG_PLATFORM_BUILD := true
 # Kernel image
 BOARD_KERNEL_SEPARATED_DT := true
 BOARD_CUSTOM_BOOTIMG_MK := device/lge/g2m/mkbootimg.mk
-TARGET_KERNEL_SOURCE := kernel/lge/msm8226
+TARGET_KERNEL_SOURCE := kernel/lge/msm8x26
 TARGET_KERNEL_CONFIG := g2mini_cm_defconfig
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 user_debug=31 msm_rtb.filter=0x37 androidboot.hardware=g2m androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x00000000

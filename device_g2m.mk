@@ -61,8 +61,7 @@ PRODUCT_COPY_FILES += \
     device/lge/g2m/prebuilt/etc/mixer_paths.xml:system/etc/mixer_paths.xml \
     device/lge/g2m/prebuilt/etc/thermal-engine-8226.conf:system/etc/thermal-engine-8226.conf \
     device/lge/g2m/prebuilt/usr/idc/touch_dev.idc:system/usr/idc/touch_dev.idc \
-    device/lge/g2m/prebuilt/usr/keylayout/Generic-D4x5.kl:system/usr/keylayout/Generic-D4x5.kl \
-    device/lge/g2m/prebuilt/usr/keylayout/Generic-D410.kl:system/usr/keylayout/Generic-D410.kl \
+    device/lge/g2m/prebuilt/usr/keylayout/Generic.kl:system/usr/keylayout/Generic.kl \
     device/lge/g2m/prebuilt/etc/init.zetaw.bt.sh:system/etc/init.zetaw.bt.sh \
     device/lge/g2m/prebuilt/etc/init.qcom.fm.sh:system/etc/init.qcom.fm.sh \
     device/lge/g2m/prebuilt/etc/sec_config:system/etc/sec_config \
