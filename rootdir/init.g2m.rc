@@ -45,8 +45,6 @@ on init
     symlink /storage/sdcard1 /mnt/external_sd
     symlink /storage/sdcard1 /external_sd
 
-    # NFC fix
-    symlink /dev/pn547 /dev/pn544
 
     # We use our own ril-daemon service definition, see mmi-ril-daemon
     stop ril-daemon
@@ -174,6 +172,11 @@ on boot
     # NFC local data and nfcee xml storage
     mkdir /data/nfc 0770 nfc nfc
     mkdir /data/nfc/param 0770 nfc nfc
+    
+    # NFC fix
+    symlink /dev/pn547 /dev/pn544
+    symlink /dev/pn547 /dev/pn54x    
+    setprop ro.nfc.port "I2C"
 
     chown media media /dev/msm_IRRC_pcm_dec
     chmod 0660 /dev/msm_IRRC_pcm_dec
