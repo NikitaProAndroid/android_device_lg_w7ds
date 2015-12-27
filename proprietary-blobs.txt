@@ -1,3 +1,6 @@
+# Time services
+bin/time_daemon
+
 # Keystore
 etc/firmware/keymaster/keymaster.b00
 etc/firmware/keymaster/keymaster.b02
