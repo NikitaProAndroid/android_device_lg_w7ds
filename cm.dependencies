@@ -8,10 +8,6 @@
     "target_path": "hardware/qcom/fm"
   },
   {
-    "repository": "android_hardware_sony_timekeep",
-    "target_path": "hardware/sony/timekeep"
-  },
-  {
     "repository": "android_hardware_qcom_media",
     "target_path": "hardware/qcom/media"
    }

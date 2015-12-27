@@ -190,6 +190,3 @@ include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += \
         device/lge/g2m/sepolicy
 
-BOARD_SEPOLICY_UNION += \
-	timekeep.te
-
