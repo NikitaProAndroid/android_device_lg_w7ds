@@ -152,7 +152,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 # TWRP Recovery
 BOARD_HAS_NO_SELECT_BUTTON := true
-TARGET_RECOVERY_FSTAB := device/lge/g2m/rootdir/fstab.g2m
+TARGET_RECOVERY_FSTAB := device/lge/g2m/rootdir/twrp.fstab
 RECOVERY_FSTAB_VERSION := 2
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 DEVICE_RESOLUTION := 540x960
@@ -188,7 +188,7 @@ MR_INPUT_TYPE := type_b
 MR_INIT_DEVICES := device/lge/g2m/multirom/mr_init_devices.c
 MR_DPI := hdpi
 MR_DPI_FONT := 160
-MR_FSTAB := device/lge/g2m/recovery/etc/twrp.fstab
+MR_FSTAB := device/lge/g2m/rootdir/twrp.fstab
 MR_KEXEC_MEM_MIN := 0x05000000
 MR_KEXEC_DTB := true
 MR_CONTINUOUS_FB_UPDATE := true
