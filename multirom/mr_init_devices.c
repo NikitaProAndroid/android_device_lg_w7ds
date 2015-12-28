@@ -20,7 +20,7 @@ const char *mr_init_devices[] =
     "/sys/module/mmc_core",
     "/sys/module/mmcblk",
 
-    "/sys/devices/gpio_keys.*/input*",
+    "/sys/devices/gpio_keys.75/input*",
     "/sys/class/input/event4", //touch
     "/sys/devices/virtual/input*",
     "/sys/devices/virtual/misc/uinput",
@@ -30,6 +30,10 @@ const char *mr_init_devices[] =
     "/sys/devices/virtual/misc/android_adb",
     "/sys/devices/virtual/android_usb/android0/f_adb",
     "/sys/bus/usb",
+
+    // sdcard
+    "/sys/block/mmcblk1",
+    "/sys/devices/msm_sdcc.2/mmc_host*",
 
     // USB drive is in here
     "/sys/module/ehci_hcd*",
