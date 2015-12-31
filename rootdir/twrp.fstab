@@ -1,8 +1,9 @@
 # mount point   fstype          device
 
-/data         auto      /dev/block/platform/msm_sdcc.1/by-name/userdata
-/cache        auto      /dev/block/platform/msm_sdcc.1/by-name/cache
-/system       auto      /dev/block/platform/msm_sdcc.1/by-name/system
-/boot         emmc      /dev/block/platform/msm_sdcc.1/by-name/boot
-/recovery     emmc      /dev/block/platform/msm_sdcc.1/by-name/recovery
-/sdcard       auto      /dev/block/mmcblk1p1
+/cust         ext4      /dev/block/mmcblk0p30
+/data         ext4      /dev/block/mmcblk0p34
+/cache        ext4      /dev/block/mmcblk0p33
+/system       ext4      /dev/block/mmcblk0p32
+/boot         emmc      /dev/block/mmcblk0p16
+/recovery     emmc      /dev/block/mmcblk0p17
+/sdcard       vfat      /dev/block/mmcblk1p1
