@@ -35,7 +35,7 @@ TARGET_RELEASETOOLS_EXTENSIONS := device/lge/g2m
 TARGET_UNIFIED_DEVICE := true
 TARGET_INIT_VENDOR_LIB := libinit_msm
 TARGET_LIBINIT_DEFINES_FILE := device/lge/g2m/init/init_g2m.c
-TARGET_OTA_ASSERT_DEVICE := g2m,g2mds,g2mss,d620,d618,d610
+TARGET_OTA_ASSERT_DEVICE := g2m
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8226
@@ -52,14 +52,14 @@ TARGET_CPU_VARIANT := krait
 ART_USE_HSPACE_COMPACT := true
 MALLOC_IMPL := dlmalloc
 
-TARGET_BOOTLOADER_BOARD_NAME := g2m
+TARGET_BOOTLOADER_BOARD_NAME := g2mds
 
 # Kernel image
 BOARD_KERNEL_SEPARATED_DT := true
 BOARD_CUSTOM_BOOTIMG_MK := device/lge/g2m/mkbootimg.mk
-TARGET_KERNEL_SOURCE := kernel/lge/msm8x26
-TARGET_KERNEL_CONFIG := g2mini_cm_defconfig
-BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 user_debug=31 msm_rtb.filter=0x37 androidboot.hardware=g2m androidboot.selinux=permissive
+TARGET_KERNEL_SOURCE := kernel/lge/msm8226
+TARGET_KERNEL_CONFIG := g2m_cyanogenmod_defconfig
+BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 user_debug=31 msm_rtb.filter=0x37 androidboot.hardware=qcom androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
@@ -170,7 +170,7 @@ BOARD_RECOVERY_SWIPE := true
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_15x24.h\"
 BOARD_SUPPRESS_EMMC_WIPE := true
 RECOVERY_SDCARD_ON_DATA := true
-HAVE_SELINUX := true
+# HAVE_SELINUX := true
 BOARD_HAS_NO_MISC_PARTITION := true
 #TW_NEVER_UNMOUNT_SYSTEM := true
 TW_NO_REBOOT_BOOTLOADER := true
@@ -192,6 +192,10 @@ MR_FSTAB := device/lge/g2m/rootdir/twrp.fstab
 MR_KEXEC_MEM_MIN := 0x05000000
 MR_KEXEC_DTB := true
 MR_CONTINUOUS_FB_UPDATE := true
+MR_USE_QCOM_OVERLAY := true
+MR_QCOM_OVERLAY_HEADER := device/lge/g2m/multirom/framebuffer_qcom_overlay.h
+MR_QCOM_OVERLAY_CUSTOM_PIXEL_FORMAT := MDP_RGBX_8888
+MR_PIXEL_FORMAT := "RGBX_8888"
 
 # Enable Minikin text layout engine (will be the default soon)
 USE_MINIKIN := true
