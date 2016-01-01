@@ -51,7 +51,6 @@ persist.service.crash.enable=0
 ro.config.vc_call_vol_steps=6
 persist.data.sbp.update=0
 ro.lge.proximity.delay=25
-qemu.hw.mainkeys=0
 
 # ART
 dalvik.vm.dex2oat-flags=--no-watch-dog
